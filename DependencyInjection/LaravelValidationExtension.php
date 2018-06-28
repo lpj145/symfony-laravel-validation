@@ -13,7 +13,7 @@ class LaravelValidationExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
-        $locale = $container->get('laravel_validation.locale') ?? 'pt-BR';
+        $locale = $container->getParameter('locale_validation') ?? 'pt-BR';
 
         $translator = new Translator(
             new FileLoader(
