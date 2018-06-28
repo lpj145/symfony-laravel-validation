@@ -16,7 +16,7 @@ class ValidateFactory
             ),
             $locale
         );
-        $validation = new Validation($translator, null);
+        $validation = new Validate($translator, null);
         $validation->setAsGlobal();
         return $validation;
     }
