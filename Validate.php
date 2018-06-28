@@ -1,14 +1,10 @@
 <?php
 namespace MarcosDantas\LaravelValidationBundle;
 
-use Illuminate\Filesystem\Filesystem;
-use Illuminate\Translation\FileLoader;
-use Illuminate\Translation\Translator;
 use Illuminate\Validation\Factory;
 
-class ValidationFactory extends Factory
+class Validate extends Factory
 {
-
     /**
      * @var Factory
      */
