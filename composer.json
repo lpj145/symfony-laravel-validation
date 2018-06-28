@@ -1,6 +1,6 @@
 {
-    "name": "marcosadantas/laravel-validations",
-    "description": "Bundle to serve illuminate/validation",
+    "name": "marcosadantas/sf-laravel-validation",
+    "description": "Bundle to serve illuminate/validation on symfony framework",
     "authros": [
         {
             "name": "Marcos Dantas",
