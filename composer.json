@@ -1,0 +1,27 @@
+{
+    "name": "marcosadantas/laravel-validations",
+    "description": "Bundle to serve illuminate/validation",
+    "authros": [
+        {
+            "name": "Marcos Dantas",
+            "email": "marcos.adantas@hotmail.com"
+        }
+    ],
+    "keywords": [
+        "php",
+        "laravel-validation",
+        "symfony4",
+        "symfony-flex"
+    ],
+    "license": "MIT",
+    "require": {
+        "symfony/dependency-injection": "^4.1",
+        "symfony/http-kernel": "^4.1",
+        "illuminate/validation": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarcosDantas\\LaravelValidationBundle\\": ""
+        }
+    }
+}
