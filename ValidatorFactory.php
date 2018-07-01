@@ -35,10 +35,6 @@ class ValidatorFactory
 
     protected static function addExtensions(Factory $factory)
     {
-        $factory->extend('filespl', function($attribute, $value, $parameters, $validator){
-            return $value instanceof \SplFileInfo;
-        });
-
         return $factory;
     }
 
