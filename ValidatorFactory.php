@@ -28,9 +28,23 @@ class ValidatorFactory
         return dirname(__FILE__).'/lang';
     }
 
+    protected static function getFactory(string $locale)
+    {
+        return self::addExtensions(new Factory(self::loadTranslator($locale)));
+    }
+
+    protected static function addExtensions(Factory $factory)
+    {
+        $factory->extend('filespl', function($attribute, $value, $parameters, $validator){
+            return $value instanceof \SplFileInfo;
+        });
+
+        return $factory;
+    }
+
     public static function factoryValidator(string $locale = 'pt-BR')
     {
-        return new Factory(self::loadTranslator($locale));
+        return self::getFactory($locale);
     }
 
     public function createValidator(string $locale = 'pt-BR')
